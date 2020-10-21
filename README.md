@@ -1,2 +1,2 @@
-# Trial
+# C Programming
 Trying Algo
