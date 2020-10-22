@@ -13,3 +13,9 @@
                       --------    Body executed at least Once.          
                       ---------   Exit controlled loop 
                     }while(condition);
+# Function
+ 1)User Defined Function- Created by Users
+ 2)Library Function     - printf(),scanf(),sqrt();
+ #Uses
+  - Abstraction
+  - Reusablity
