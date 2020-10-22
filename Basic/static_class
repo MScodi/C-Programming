@@ -1,0 +1,18 @@
+#include <stdio.h>
+// lifetime starts
+void func()
+{   // Default value= Zero
+    static int x=2, y=5;    // local static init to zero.initilization to cons i s not allow
+    printf("x=%d ,y=%d\n",x,y);
+    x++;
+    y++;
+    
+}
+// lifetime ends
+int main()
+{   func();
+    func();
+    func();
+
+    return 0;
+}
