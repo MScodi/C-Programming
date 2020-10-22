@@ -7,11 +7,11 @@ int main()
 {   int a,b,s=0;
     printf("Enter two number");
     scanf("%d%d",&a,&b);
-    s=sum(a,b);
+    s=sum(a,b);             //Function Calling
     return 0;
 }
 int sum(int x, int y){      //Function Defination
     int sum=0;
-    sum=x+y;
-    return sum;
+    sum=x+y;                //---Function body
+    return sum;             // We can't define one function in another function
 }
