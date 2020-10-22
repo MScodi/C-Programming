@@ -1,0 +1,38 @@
+/******************************************************************************
+
+switch-case program 
+Here in the switch(exp), exp can be int, char but not float.
+
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{   char op;
+    int a,b;
+    printf("Enter opeartion : ");
+    scanf("%s",&op);
+    printf("Enter two Number\n");
+    scanf("%d%d",&a, &b);
+
+    switch(op)
+    {
+        
+        case '+':
+            printf("Result =%d\n",a+b);
+            break;
+        case '-' :
+            printf("Result =%d\n",a-b);
+            break;
+        case '/':
+            printf("Result =%d\n",a/b);
+            break;
+        case '*':
+            printf("Result =%d\n", a*b);
+            break;
+        default:
+            printf("Enter only Operators +,-,*,/  ");
+            break;
+    }
+
+    return 0;
+}
