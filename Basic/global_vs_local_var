@@ -1,0 +1,29 @@
+/******************************************************************************
+
+By default global variable initialise to zero.
+global variable has lower precedence than Local variable .
+
+*******************************************************************************/
+#include <stdio.h>
+void func1(void);
+void func2(void);
+
+int a,b=6;          // GlOBAL variable - outside and  initialised variable(a=0 by default) 
+
+int main(){
+    
+    printf("Inside main() : a=%d,b=%d\n", a,b);  // Global accesible across all function 
+    func1();
+    func2();
+    return 0;
+}
+void func1(void){
+    printf("Inside func1() : a=%d, b=%d\n",a,b);
+    
+}
+// local variable have higher precedence over global variable. only inside function.
+void func2(void){
+    int a=8;                //local variable
+    printf("Inside func1() : a=%d, b=%d\n",a,b);
+    
+}
