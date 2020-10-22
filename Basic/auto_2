@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{   int i=10;
+    printf("Outside the Block\n");
+    
+    printf("%d\n",i);
+    {
+            int i=120;
+            printf("Inside th Block %d\n",i);
+        }
+    return 0;
+}
