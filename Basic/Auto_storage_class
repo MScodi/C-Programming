@@ -1,0 +1,19 @@
+#include <stdio.h>
+// lifetime starts
+void func()
+{   // Default value= Garbage
+    int x=2, y=5;    // by default 'AUTO' storage class assigned to it.
+    printf("x=%d ,y=%d\n",x,y);
+    x++;
+    y++;
+    
+}
+// lifetime ends
+int main()
+{   func();
+    func();
+    func();
+    printf("Hello World");
+
+    return 0;
+}
