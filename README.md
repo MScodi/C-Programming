@@ -14,8 +14,11 @@
                       ---------   Exit controlled loop 
                     }while(condition);
 # Function
- 1)User Defined Function- Created by Users
- 2)Library Function     - printf(),scanf(),sqrt();
- #Uses
-  - Abstraction
-  - Reusablity
+    1 )User Defined Function- Created by Users
+    2)Library Function     - printf(),scanf(),sqrt();
+ 
+    -- Function in C/C++ return a single value . But we are able to return Multiple value by using             Pointers,structure,arrays.
+ 
+     #Uses
+    -  Abstraction
+    -  Reusablity
