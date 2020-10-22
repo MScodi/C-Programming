@@ -16,6 +16,12 @@
 # Function
     1 )User Defined Function- Created by Users
     2)Library Function     - printf(),scanf(),sqrt();
+    Return and argument is not mandatory
+    
+    int f(int a){                                    | f(x);
+    ---------   //here a is formal or dummy argument |  // here x is actual Parameter
+    ----------                                       |
+    }
  
     -- Function in C/C++ return a single value . But we are able to return Multiple value by using             Pointers,structure,arrays.
  
