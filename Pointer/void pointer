@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{   int a=3;
+    float b=3.4,*fp=&b;
+    void*vp;               //void pointer
+    vp=&a;                  //copy addres value of a to void pointer
+        printf("values of a=%d\n",*(int *)vp);
+        *(int *)vp=12;      // explicit conversion
+        printf("values of a=%d\n",*(int *)vp);
+        vp=fp;              //copy value of float to void pointer
+        printf("values of a=%f\n",*(float * )vp);
+    
+
+   
+
+    return 0;
+}  
