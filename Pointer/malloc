@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main()
+{   int *p,n,i;
+    printf("Enter the numnber of integers to be entered:");
+    scanf("%d",&n);
+    p=(int*)malloc(n*sizeof(int));      //dynamic memory allocation
+    if(p==NULL){
+        printf("Memory Not available\n");
+        exit(1);                        //Heap is full
+    }
+    for(i=0;i<n;i++){
+        printf("Enter an Integer: ");
+        scanf("%d",p+i);
+    }
+    
+    for(i=0;i<n;i++){
+        printf("%d\t",*(p+i));
+
+    }
+    return 0;
+}
