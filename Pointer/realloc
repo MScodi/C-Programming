@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main ()
+{
+  int *p, n, i;
+  p = (int *) malloc (5 * sizeof (int));	       // to store 5 integers
+  if (p == NULL)
+    {
+      printf ("Memory Not available\n");
+      exit (1);
+    }
+  for (i = 0; i < 5; i++)
+    {				                                        //filling the valus from 0 to 5
+      *(p + i) = i * 2;
+    }
+  p = (int *) realloc (p, 9 * sizeof (int));	      // realloc to increase size to 9
+
+  for (i = 5; i < 9; i++)
+    {
+      *(p + i) = i * 10;
+
+    }
+
+  for (i = 0; i < 9; i++)
+    {
+      printf ("%d\t", *(p + i));
+
+    }
+  return 0;
+}
