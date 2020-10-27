@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<string.h>
+
+struct student
+{
+    char name[20];
+    int rollno;
+    float marks;
+    
+};
+
+int main()
+{   struct student s1={"satish",34,99};
+    struct student s2,s3;
+    strcpy(s2.name,"Ram");
+    
+    s2.rollno=23;
+    s2.marks=100;
+    printf("Enter name and rollno, marks for student 3: ");
+    scanf("%s %d %f",s3.name,&s3.rollno,&s3.marks);
+    printf("s1 :%s %d %.2f\n",s1.name,s1.rollno,s1.marks);
+    printf("s1 :%s %d %.2f\n",s2.name,s2.rollno,s2.marks);
+    printf("s1 :%s %d %.2f\n",s3.name,s3.rollno,s3.marks);
+    
+    return 0;
+}
