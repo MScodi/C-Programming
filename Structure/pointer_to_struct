@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+struct student
+{   char name[20];
+int rollno;
+int marks;
+};
+
+int main(){
+    
+    struct student s1={"satish",25,68};
+    struct student *ptr = &s1;
+    printf("Name -%s\t", ptr->name);
+    printf("rollno -%d\t", ptr->rollno);
+    printf("marks -%d\n", ptr->marks);
+    return 0;
+}
