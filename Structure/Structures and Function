@@ -1,0 +1,27 @@
+//passing structre members as argument
+#include <stdio.h>
+#include <string.h>
+struct student{
+    char name[20];
+    int rollno;
+    int marks;
+};
+// 1 passing structre members as argument
+void print(char name[],int rollno,int marks);
+int main()
+{   struct student s1={"satish",1,87};  //creating varialbe and filling values
+    struct student s2;
+    strcpy(s2.name,"Naveen");
+    s2.rollno=2;
+    s2.marks=90;
+    
+    print(s1.name,s1.rollno,s1.marks );//passing by values
+    print(s2.name,s2.rollno,s2.marks );
+    return 0;
+}
+void print(char name[],int rollno ,int marks){
+    printf("name  - %s\t",name);
+    printf("Rollno  - %d\t",rollno);
+    printf("marks  - %d\t",marks);
+    
+}
