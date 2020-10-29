@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+struct student{
+    char name[20];
+    int rollno;
+    int marks;
+};
+// 2 passing structre varialbe as argument
+void print(struct student);
+int main()
+{   struct student s1={"satish",1,87};  //creating varialbe and filling values
+    struct student s2={"Naveen",2,90};
+    print(s1);
+    print(s2);
+    return 0;
+}
+void print(struct student stu){
+    printf("name  - %s\t",stu.name);
+    printf("Rollno  - %d\t",stu.rollno);
+    printf("marks  - %d\t",stu.marks);
+    
+}
