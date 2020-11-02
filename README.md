@@ -1,3 +1,6 @@
+<p align="center">
+<img src="https://github.com/MScodi/C-Programming/issues/2#issue-734390973">
+</p>
 # C Programming
 # Loop
     1)For            -Typically, we Use when we know how much iteration we want-
