@@ -1,6 +1,5 @@
-<p align="center">
-<img src="https://github.com/MScodi/C-Programming/issues/2#issue-734390973">
-</p>
+![C](https://user-images.githubusercontent.com/63348263/97858570-58752600-1d25-11eb-8b79-fedea76f129f.png)
+
 
 # C Programming
 
