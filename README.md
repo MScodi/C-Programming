@@ -28,8 +28,13 @@
     ----------                                       |
     }
  
-    -- Function in C/C++ return a single value . But we are able to return Multiple value by using             Pointers,structure,arrays.
+    -- Function in C/C++ return a single value . But we are able to return Multiple value by using *Pointers*,structure,arrays.
  
      #Uses
     -  Abstraction
     -  Reusablity
+    3) Variadic funcion -Functions which take a variable number of arguments. Must add _<stdarg.h>_
+            va_list: To initialize the arguments pointer.
+            va_start :Point to the first element.
+            va_arg  : Point to first and then move to next arguments on evrery function call.
+            va_end   : End using variable argument list
